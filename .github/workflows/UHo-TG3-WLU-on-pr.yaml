@@ -10,6 +10,6 @@ jobs:
       - uses: actions/checkout@v4
       
       - name: Print Pull Request Info
-        uses: david-zoltan/UHo-TG3-WLU@v1
+        uses: david-zoltan/UHo-TG3-WLU@main
         with:
           pr_number: ${{ github.event.pull_request.number }}
