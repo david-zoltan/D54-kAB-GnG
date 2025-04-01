@@ -1,0 +1,11 @@
+name: On PR -> Call External Workflow
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  call-remote:
+    uses: david-zoltan/UHo-TG3-WLU/print.yml@main
+    secrets:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
