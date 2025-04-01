@@ -13,3 +13,5 @@ jobs:
         uses: david-zoltan/UHo-TG3-WLU@main
         with:
           pr_number: ${{ github.event.pull_request.number }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
